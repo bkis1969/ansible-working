@@ -1,7 +1,7 @@
 - name: Configure web.config for SQL connection string
   hosts: windows
   vars:
-    ip_address: 10.0.0.1
+    ip_address: 54.219.58.73
     database_name: mydatabase
     db_username: sqluser
     db_password: Pa$$w0rd
