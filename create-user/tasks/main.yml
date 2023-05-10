@@ -15,3 +15,13 @@
   win_command: 'net localgroup "Administrators" ansible /add'
   become: yes
   when: "'The specified account name is already a member of the group.' not in result.stderr"
+  - name: Create user ansible
+  win_user: 
+    name: ansible
+    password: Password123
+    state: present
+    groups:
+      - Administrators
+  become: yes  
+  ignore_errors: yes
+  register: result
