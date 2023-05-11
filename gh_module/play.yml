@@ -7,7 +7,7 @@
     - debug: var=result
 - name: Create a github Repo
       github_repo:test-repo
-        github_auth_key: "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"
+        github_auth_key: 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
         username: bkis1969
         name: "Hello-World"
         description: "This is your first repository"
